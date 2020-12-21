@@ -14,7 +14,8 @@ function App() {
   return (
       <div className="App">
           <Intro/>
-          {status ?null              :
+          {status ?null
+              :
               <div>
                   <Toolbar/>
                   <Main/>

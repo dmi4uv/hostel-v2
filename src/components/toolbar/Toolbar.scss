@@ -115,3 +115,27 @@
   50% { background-color: #83CAE8; }
   60% { background-color: rgba(255, 255, 255, 0); }
 }
+
+.fake_toolbar {
+  opacity: 0;
+  width: 0;
+  top: 0;
+  height: 100vh;
+  position: absolute;
+  left: 92px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.73);
+  transition: width 1s, height 1s;
+
+  &_full {
+    opacity: 1;
+    width: 100%;
+  }
+  &_close {
+    opacity: 1;
+    width: 100%;
+    top: 0;
+    left: 92px ;
+    height: 0;
+  }
+}
