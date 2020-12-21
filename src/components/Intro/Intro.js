@@ -1,0 +1,33 @@
+import React,{useState} from 'react'
+import './style.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Intro = () => {
+
+    const [opacity,setStyle] = useState()
+    const [lineWidth,setLineWidth] = useState('intro_line')
+    setTimeout(()=>{
+        setStyle(0)
+    },4000)
+
+    let introStyle = {
+        opacity: opacity
+    }
+
+    let lineStyle = lineWidth
+
+    setTimeout( ()=> {
+        setLineWidth('intro_line addWidth')
+    },500)
+
+    AOS.init()
+    return <div className='intro' style={introStyle} data-aos-mirror="true" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+        <p>Место, где вас</p>
+        <p>всегда ждут.</p>
+
+        <div className={lineStyle}/>
+    </div>
+}
+
+export default Intro
