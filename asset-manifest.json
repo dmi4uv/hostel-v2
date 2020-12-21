@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hostel-v2/static/css/main.9279437b.chunk.css",
-    "main.js": "/hostel-v2/static/js/main.f741ebb0.chunk.js",
-    "main.js.map": "/hostel-v2/static/js/main.f741ebb0.chunk.js.map",
-    "runtime-main.js": "/hostel-v2/static/js/runtime-main.bd4183b4.js",
-    "runtime-main.js.map": "/hostel-v2/static/js/runtime-main.bd4183b4.js.map",
+    "main.css": "/hostel-v2/static/css/main.6162f375.chunk.css",
+    "main.js": "/hostel-v2/static/js/main.bf75463b.chunk.js",
+    "main.js.map": "/hostel-v2/static/js/main.bf75463b.chunk.js.map",
+    "runtime-main.js": "/hostel-v2/static/js/runtime-main.f08b71de.js",
+    "runtime-main.js.map": "/hostel-v2/static/js/runtime-main.f08b71de.js.map",
     "static/css/2.ec02d681.chunk.css": "/hostel-v2/static/css/2.ec02d681.chunk.css",
-    "static/js/2.b45f7f6a.chunk.js": "/hostel-v2/static/js/2.b45f7f6a.chunk.js",
-    "static/js/2.b45f7f6a.chunk.js.map": "/hostel-v2/static/js/2.b45f7f6a.chunk.js.map",
-    "static/js/3.57aabd19.chunk.js": "/hostel-v2/static/js/3.57aabd19.chunk.js",
-    "static/js/3.57aabd19.chunk.js.map": "/hostel-v2/static/js/3.57aabd19.chunk.js.map",
+    "static/js/2.3d3f1180.chunk.js": "/hostel-v2/static/js/2.3d3f1180.chunk.js",
+    "static/js/2.3d3f1180.chunk.js.map": "/hostel-v2/static/js/2.3d3f1180.chunk.js.map",
+    "static/js/3.3dd12cd6.chunk.js": "/hostel-v2/static/js/3.3dd12cd6.chunk.js",
+    "static/js/3.3dd12cd6.chunk.js.map": "/hostel-v2/static/js/3.3dd12cd6.chunk.js.map",
     "index.html": "/hostel-v2/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/hostel-v2/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.9279437b.chunk.css.map": "/hostel-v2/static/css/main.9279437b.chunk.css.map",
-    "static/js/2.b45f7f6a.chunk.js.LICENSE.txt": "/hostel-v2/static/js/2.b45f7f6a.chunk.js.LICENSE.txt",
+    "static/css/main.6162f375.chunk.css.map": "/hostel-v2/static/css/main.6162f375.chunk.css.map",
+    "static/js/2.3d3f1180.chunk.js.LICENSE.txt": "/hostel-v2/static/js/2.3d3f1180.chunk.js.LICENSE.txt",
     "static/media/Main.scss": "/hostel-v2/static/media/main2.46705ae7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bd4183b4.js",
+    "static/js/runtime-main.f08b71de.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.b45f7f6a.chunk.js",
-    "static/css/main.9279437b.chunk.css",
-    "static/js/main.f741ebb0.chunk.js"
+    "static/js/2.3d3f1180.chunk.js",
+    "static/css/main.6162f375.chunk.css",
+    "static/js/main.bf75463b.chunk.js"
   ]
 }
