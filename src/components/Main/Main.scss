@@ -1,0 +1,76 @@
+.main_page {
+  height: 100vh;
+  width: 100%;
+  background: url("../../img/main2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-left: 100px;
+}
+.logo {
+  text-align: left;
+  color: white;
+  font-family: 'Righteous', cursive;
+  margin-left: 40px ;
+
+  span {
+    font-size: 43px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.phone_icon, .main_offer_arrow {
+  display: inline;
+  margin-right: 10px;
+}
+.phone a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.main_content{
+
+  margin-left: 100px;
+  h1 {
+    font-weight: 400;
+    margin-top: 30vh;
+    margin-left: 140px;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+}
+
+.main_offer {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  span {
+    margin-right: 20px;
+  }
+  .main_offer_arrow{
+    margin-bottom: -5px;
+  }
+}

@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import './style.scss'
+import './Intro.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,7 +9,7 @@ const Intro = () => {
     const [lineWidth,setLineWidth] = useState('intro_line')
     setTimeout(()=>{
         setStyle(0)
-    },4000)
+    },2000)
 
     let introStyle = {
         opacity: opacity
