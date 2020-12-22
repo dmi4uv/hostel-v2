@@ -5,24 +5,24 @@ import Main from "../Main/Main";
 import Toolbar from "../toolbar/Toolbar";
 
 function App() {
-    const [status,introSwitch] = useState(1)
+    const [status, introSwitch] = useState(1)
 
-    setTimeout(()=> {
+    setTimeout(() => {
         introSwitch(0)
-    },2000)
+    }, 2000)
 
-  return (
-      <div className="App">
-          <Intro/>
-          {status ?null
-              :
-              <div>
-                  <Toolbar/>
-                  <Main/>
-              </div>
-          }
-     </div>
-  );
+    return (
+        <div className="App">
+            <Intro/>
+            {status ? null
+                :
+                <div>
+                    <Toolbar/>
+                    <Main/>
+                </div>
+            }
+        </div>
+    );
 }
 
 export default App;

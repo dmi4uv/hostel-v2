@@ -1,4 +1,4 @@
-import React,{Fragment, Component} from 'react'
+import React, {Fragment, Component} from 'react'
 import './Toolbar.scss'
 
 class Toolbar extends Component {
@@ -14,24 +14,22 @@ class Toolbar extends Component {
     roomsClick() {
         this.setState({fakeToolbar: 'fake_toolbar fake_toolbar_full'})
 
-        setTimeout(()=> {
+        setTimeout(() => {
             this.setState({fakeToolbar: 'fake_toolbar fake_toolbar_close'})
-             setTimeout(()=>{
-                 this.setState({fakeToolbar: 'fake_toolbar'})
-             },1000)
-        },1000)
-
+            setTimeout(() => {
+                this.setState({fakeToolbar: 'fake_toolbar'})
+            }, 1000)
+        }, 1000)
 
 
     }
 
 
-
     componentDidMount() {
-       setTimeout(()=> {
-           this.setState({toolBarClass: 'toolbar'})
-           console.log(2)
-       },100)
+        setTimeout(() => {
+            this.setState({toolBarClass: 'toolbar'})
+            console.log(2)
+        }, 100)
     }
 
     render() {
@@ -85,7 +83,6 @@ class Toolbar extends Component {
 
             </div>
         </Fragment>
-
 
 
     }
