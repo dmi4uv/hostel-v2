@@ -12,12 +12,11 @@
   padding: 24px 0;
   margin-left: 100px;
 }
-
 .logo {
   text-align: left;
   color: white;
   font-family: 'Righteous', cursive;
-  margin-left: 40px;
+  margin-left: 40px ;
 
   span {
     font-size: 43px;
@@ -40,7 +39,6 @@
   display: inline;
   margin-right: 10px;
 }
-
 .phone a {
   font-size: 18px;
   color: white;
@@ -48,11 +46,11 @@
 }
 
 
-.main_content {
+.main_content{
 
   margin-left: 100px;
-
   h1 {
+    width: 300px;
     font-weight: 400;
     margin-top: 30vh;
     margin-left: 140px;
@@ -70,12 +68,10 @@
   position: absolute;
   right: 100px;
   bottom: 100px;
-
   span {
     margin-right: 20px;
   }
-
-  .main_offer_arrow {
+  .main_offer_arrow{
     margin-bottom: -5px;
   }
 }

@@ -1,10 +1,7 @@
 .intro {
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
   width: 400px;
   height: 300px;
   text-align: left;
@@ -15,7 +12,7 @@
   line-height: 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-  &_line {
+  &_line{
     transition: width 2s;
     width: 0px;
     height: 5px;

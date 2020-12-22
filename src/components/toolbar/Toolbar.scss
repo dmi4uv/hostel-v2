@@ -1,7 +1,7 @@
 .toolbar {
   position: absolute;
   height: 100%;
-  width: 90px;
+  width: 90px ;
   background: #3D3D3D;
   opacity: .7;
   border-right: 3px solid #D2CFCF;
@@ -14,13 +14,35 @@
     width: 100%;
     opacity: 1;
 
-    .link {
+    .link,.nav_lang {
       opacity: 0;
     }
+
+  }
+
+  .nav_lang {
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    transition: opacity 6s;
+  }
+  .lang_active {
+    font-weight: bold;
+  }
+
+  .lang_item {
+    cursor: pointer;
+  }
+
+  .split {
+    padding: 0 5px;
   }
 
   .nav {
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 
   .nav_sub {
@@ -32,7 +54,6 @@
     width: 90px;
     min-height: 20px;
     transition: background-color 1s, color 1s, font-weight 1s, opacity 6s;
-
     &:hover {
       background: #83CAE8;
       color: #61dafb;
@@ -41,154 +62,81 @@
   }
 
 
-}
 
+}
 #link0 {
   -webkit-animation: link0 7s linear infinite;
   animation: link0 7s linear infinite;
 }
-
 @-webkit-keyframes link0 {
-  0% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  10% {
-    background-color: #83CAE8;
-  }
-  20% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  0% { background-color: rgba(255, 255, 255, 0);}
+  10% { background-color: #83CAE8; }
+  20% { background-color: rgba(255, 255, 255, 0); }
 }
-
 @keyframes link0 {
 
-  0% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  10% {
-    background-color: #83CAE8;
-  }
-  20% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  0% { background-color: rgba(255, 255, 255, 0);}
+  10% { background-color: #83CAE8; }
+  20% { background-color: rgba(255, 255, 255, 0); }
 }
 
 #link1 {
   -webkit-animation: link1 7s linear infinite;
   animation: link1 7s linear infinite;
 }
-
 @-webkit-keyframes link1 {
-  10% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  20% {
-    background-color: #83CAE8;
-  }
-  30% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  10% { background-color: rgba(255, 255, 255, 0);}
+  20% { background-color: #83CAE8; }
+  30% { background-color: rgba(255, 255, 255, 0); }
 }
-
 @keyframes link1 {
 
-  10% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  20% {
-    background-color: #83CAE8;
-  }
-  30% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  10% { background-color: rgba(255, 255, 255, 0);}
+  20% { background-color: #83CAE8; }
+  30% { background-color: rgba(255, 255, 255, 0); }
 }
-
 #link2 {
   -webkit-animation: link2 7s linear infinite;
   animation: link2 7s linear infinite;
 }
-
 @-webkit-keyframes link2 {
-  20% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  30% {
-    background-color: #83CAE8;
-  }
-  40% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  20% { background-color: rgba(255, 255, 255, 0); }
+  30% { background-color: #83CAE8; }
+  40% { background-color: rgba(255, 255, 255, 0); }
 }
-
 @keyframes link2 {
-  20% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  30% {
-    background-color: #83CAE8;
-  }
-  40% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+ 20% { background-color: rgba(255, 255, 255, 0); }
+ 30% { background-color: #83CAE8; }
+  40% { background-color: rgba(255, 255, 255, 0); }
 }
-
 #link3 {
-  -webkit-animation: link3 7s linear infinite;
+  -webkit-animation: link3  7s linear infinite;
   animation: link3 7s linear infinite;
 }
-
-@-webkit-keyframes link3 {
-  30% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  40% {
-    background-color: #83CAE8;
-  }
-  50% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+@-webkit-keyframes link3  {
+  30% { background-color: rgba(255, 255, 255, 0); }
+  40% { background-color: #83CAE8; }
+  50% { background-color: rgba(255, 255, 255, 0); }
 }
-
-@keyframes link3 {
-  30% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  40% {
-    background-color: #83CAE8;
-  }
-  50% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+@keyframes link3  {
+  30% { background-color: rgba(255, 255, 255, 0); }
+  40% { background-color: #83CAE8; }
+  50% { background-color: rgba(255, 255, 255, 0); }
 }
-
 #link4 {
   -webkit-animation: link4 7s linear infinite;
   animation: link4 7s linear infinite;
 }
-
 @-webkit-keyframes link4 {
-  40% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    background-color: #83CAE8;
-  }
-  60% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  40% { background-color: rgba(255, 255, 255, 0);}
+  50% { background-color: #83CAE8; }
+  60% { background-color: rgba(255, 255, 255, 0); }
 }
-
 @keyframes link4 {
 
-  40% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    background-color: #83CAE8;
-  }
-  60% {
-    background-color: rgba(255, 255, 255, 0);
-  }
+  40% { background-color: rgba(255, 255, 255, 0);}
+  50% { background-color: #83CAE8; }
+  60% { background-color: rgba(255, 255, 255, 0); }
 }
 
 .fake_toolbar {
@@ -206,12 +154,12 @@
     opacity: 1;
     width: 100%;
   }
-
   &_close {
     opacity: 1;
     width: 100%;
     top: 0;
-    left: 92px;
+    left: 92px ;
     height: 0;
   }
 }
+
