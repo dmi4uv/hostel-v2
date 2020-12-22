@@ -9,7 +9,7 @@ const store = createStore(reducer, compose(
     applyMiddleware( thunk, saga
     )
      ,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    /* window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() */
 ))
 
 // saga.run(sagaWatcher)
