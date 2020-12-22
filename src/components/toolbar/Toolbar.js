@@ -1,8 +1,8 @@
-import React,{Fragment, Component} from 'react'
+import React, {Fragment, Component} from 'react'
 import './Toolbar.scss'
+import Content from "../content/content";
 
 class Toolbar extends Component {
-
     constructor() {
         super();
         this.state = {
@@ -14,43 +14,34 @@ class Toolbar extends Component {
     roomsClick() {
         this.setState({fakeToolbar: 'fake_toolbar fake_toolbar_full'})
 
-        setTimeout(()=> {
+        setTimeout(() => {
             this.setState({fakeToolbar: 'fake_toolbar fake_toolbar_close'})
-             setTimeout(()=>{
-                 this.setState({fakeToolbar: 'fake_toolbar'})
-             },1000)
-        },1000)
-
-
-
+            setTimeout(() => {
+                this.setState({fakeToolbar: 'fake_toolbar'})
+            }, 1000)
+        }, 1000)
     }
 
-
-
     componentDidMount() {
-       setTimeout(()=> {
-           this.setState({toolBarClass: 'toolbar'})
-           console.log(2)
-       },100)
+        setTimeout(() => {
+            this.setState({toolBarClass: 'toolbar'})
+            console.log(2)
+        }, 100)
     }
 
     render() {
-
-
-        // const timeout = setTimeout(()=>{
-        //     this.setState({toolBarClass: "toolbar"})
-        //     console.log('2')
-        //     clearTimeout(timeout)
-        // }, 100)
-
-
         return <Fragment>
             <div className={this.state.toolBarClass}>
+                <div className="nav_lang">
+                    <p className="lang_item lang_active">Ru </p>
+                    <p className="split">|</p>
+                    <p className="lang_item">Eng</p>
+                </div>
                 <div className="nav">
                     <div id="link0" className="link"/>
-                    <div id="link1" className="link">Главная</div>
-                    <div id="link2" onClick={this.roomsClick.bind(this)} className="link">Номера</div>
-                    <div id="link3" className="link">О нас</div>
+                    <div id="link1" className="link"><Content data="toolbar_home"/></div>
+                    <div id="link2" onClick={this.roomsClick.bind(this)} className="link"><Content data="toolbar_rooms"/></div>
+                    <div id="link3" className="link"><Content data="toolbar_about"/></div>
                     <div id="link4" className="link"/>
                 </div>
                 <div className="nav_sub">
@@ -82,10 +73,8 @@ class Toolbar extends Component {
                 </div>
             </div>
             <div className={this.state.fakeToolbar}>
-
             </div>
         </Fragment>
-
 
 
     }
