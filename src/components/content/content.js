@@ -7,6 +7,6 @@ const Content = (props) => {
     const activeLang = useSelector(state => state.activeLanguage)
     const currentData = useSelector(state => state.TRANSLATIONS[activeLang])
     console.log(data)
-    return currentData[data]
+    return currentData[data]==null?'error':currentData[data]
 }
 export default Content

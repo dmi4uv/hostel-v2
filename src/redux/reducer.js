@@ -1,8 +1,9 @@
 const  initialState = {
-    activeLanguage: 'en',
+    activeLanguage: 'ru',
     TRANSLATIONS: {
         ru:{
-            intro: "Место, где вас ждут",
+            intro_first: "Место,",
+            intro_second: "где вас ждут",
             main_title: "Aпартаменты в сердце петербурга",
             main_more: "Посмотреть номера",
             toolbar_home: "Главная",
@@ -10,7 +11,8 @@ const  initialState = {
             toolbar_about: "О нас"
         },
         en: {
-            intro: "",
+            intro_first: "The place, ",
+            intro_second: "where you are expected",
             main_title: "Apartments in the heart of St. Petersburg",
             main_more: "View rooms",
             toolbar_home: "Main",
@@ -24,6 +26,16 @@ const  initialState = {
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {
+
+        case 'SET_LANGUAGE_RU':
+            return {
+                ...state, activeLanguage: 'ru'
+            }
+            
+        case 'SET_LANGUAGE_EN':
+            return {
+                ...state, activeLanguage: 'en'
+            }
 
         default:
             return state

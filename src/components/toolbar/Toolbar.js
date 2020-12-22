@@ -1,6 +1,8 @@
 import React, {Fragment, Component} from 'react'
 import './Toolbar.scss'
+import { connect} from "react-redux"
 import Content from "../content/content";
+import {setEngLanguage,setRuLanguage } from "../../redux/acitons";
 
 class Toolbar extends Component {
     constructor() {
@@ -28,14 +30,29 @@ class Toolbar extends Component {
             console.log(2)
         }, 100)
     }
-
+    
     render() {
+
         return <Fragment>
             <div className={this.state.toolBarClass}>
                 <div className="nav_lang">
-                    <p className="lang_item lang_active">Ru </p>
+
+                 {/*            убого          */}
+                
+                    {this.props.currentLang=='ru'?
+                    <Fragment>
+                        <p onClick={this.props.setRuLanguage} className="lang_item lang_active ">Ru</p>
                     <p className="split">|</p>
-                    <p className="lang_item">Eng</p>
+                    <p onClick={this.props.setEngLanguage} className="lang_item">Eng</p>
+                    </Fragment>
+                    :
+                    <Fragment>
+                        <p onClick={this.props.setRuLanguage} className="lang_item ">Ru</p>
+                    <p className="split">|</p>
+                    <p onClick={this.props.setEngLanguage} className="lang_item lang_active">Eng</p>
+                    </Fragment>
+                    }
+                    {/*                                     */}
                 </div>
                 <div className="nav">
                     <div id="link0" className="link"/>
@@ -81,5 +98,11 @@ class Toolbar extends Component {
 
 
 }
+const mapStateToProps = state => {
+    return {
+        currentLang: state.activeLanguage
+    }
+}
+const mapDispatchToProps = {setEngLanguage, setRuLanguage }
 
-export default Toolbar
+  export default connect(mapStateToProps, mapDispatchToProps)(Toolbar)

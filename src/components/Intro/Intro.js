@@ -24,7 +24,10 @@ const Intro = () => {
 
     AOS.init()
     return <div className='intro' style={introStyle} data-aos-mirror="true" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-        <p><Content data="intro"/></p>
+        <p className="intro_text">
+            <Content data="intro_first"/><br/>
+            <Content data="intro_second"/>
+            </p>
 
 
         <div className={lineStyle}/>
