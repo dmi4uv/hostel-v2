@@ -1,5 +1,5 @@
 const  initialState = {
-    activeLanguage: 'ru',
+    activeLanguage: 'en',
     TRANSLATIONS: {
         ru:{
             intro_first: "Место,",

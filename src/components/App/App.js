@@ -10,6 +10,11 @@ import {
     Route
 } from "react-router-dom";
 
+
+/* дать нормальные имена картикам, смена языка через опасити, разобраться с высотой фона */
+
+
+
 function App() {
     const [status, introSwitch] = useState(1)
     setTimeout(() => {

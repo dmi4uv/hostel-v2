@@ -6,8 +6,10 @@ import Phone from '../svg/phone'
 import Arrow from "../svg/Arrow";
 
 const Main = () => {
-       AOS.init()
+    AOS.init()
     return <div className='main_page'>
+        <div className="front_img"/>
+        <div id="sky"/>
         <div className="main_top">
 
             <div className="logo"
@@ -29,7 +31,7 @@ const Main = () => {
 
         </div>
         <div className="main_content"
-             data-aos="fade-up"
+             data-aos="fade-up-right"
              data-aos-duration="3000"
              data-aos-delay="1400"
         >
