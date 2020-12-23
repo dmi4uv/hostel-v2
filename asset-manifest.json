@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hostel-v2/static/css/main.7a28f25d.chunk.css",
-    "main.js": "/hostel-v2/static/js/main.211dc502.chunk.js",
-    "main.js.map": "/hostel-v2/static/js/main.211dc502.chunk.js.map",
+    "main.css": "/hostel-v2/static/css/main.732ce37f.chunk.css",
+    "main.js": "/hostel-v2/static/js/main.6b0a92f7.chunk.js",
+    "main.js.map": "/hostel-v2/static/js/main.6b0a92f7.chunk.js.map",
     "runtime-main.js": "/hostel-v2/static/js/runtime-main.80c5922e.js",
     "runtime-main.js.map": "/hostel-v2/static/js/runtime-main.80c5922e.js.map",
     "static/css/2.ec02d681.chunk.css": "/hostel-v2/static/css/2.ec02d681.chunk.css",
@@ -12,15 +12,15 @@
     "static/js/3.d51f68a6.chunk.js.map": "/hostel-v2/static/js/3.d51f68a6.chunk.js.map",
     "index.html": "/hostel-v2/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/hostel-v2/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.7a28f25d.chunk.css.map": "/hostel-v2/static/css/main.7a28f25d.chunk.css.map",
+    "static/css/main.732ce37f.chunk.css.map": "/hostel-v2/static/css/main.732ce37f.chunk.css.map",
     "static/js/2.b642f0ad.chunk.js.LICENSE.txt": "/hostel-v2/static/js/2.b642f0ad.chunk.js.LICENSE.txt",
-    "static/media/Main.scss": "/hostel-v2/static/media/main2.46705ae7.jpg"
+    "static/media/Main.scss": "/hostel-v2/static/media/sky.d7306c80.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.80c5922e.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.b642f0ad.chunk.js",
-    "static/css/main.7a28f25d.chunk.css",
-    "static/js/main.211dc502.chunk.js"
+    "static/css/main.732ce37f.chunk.css",
+    "static/js/main.6b0a92f7.chunk.js"
   ]
 }
